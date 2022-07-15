@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  animation: change 3s linear infinite alternate;
+}
+.cont{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cont h1{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 50px;
+}
+.cont .form-box {
+  text-align: center;
+  padding: 10px 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.cont .form-box label {
+  display: inline-block;
+  width: 110px;
+  text-align: right;
+}
+.cont .form-box input[type="text"] {
+  height: 30px;
+  padding: 0 8px;
+}
+.cont .form-box input[type="button"] {
+  height: 40px;
+  padding: 0 10px;
+}
+.cont .form-box .line{
+  margin: 15px 0;
+}
+/* body背景图的动画 */
+@keyframes change {
+  0%{
+  background-color: lightblue;
+  }
+  50%{
+  background-color: rgb(192, 230, 173);
+  }
+  70%{
+  background-color: rgb(230, 173, 201);
+  }
+  100%{
+  background-color: rgb(230, 201, 173);
+  }
+}
